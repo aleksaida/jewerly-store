@@ -1,13 +1,545 @@
-body {
+/* body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+} */
+
+
+body {
+  background-color: #2B3A55;
+  
+} 
+
+
+nav {
+  background-color: #E8C4C4;
+  padding: 40px;
+  display: flex;
+  justify-content: center;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.link {
+  padding: 15px;
+  color: black;
+  text-decoration: none;
+  font-size: 25px;
+  text-shadow: 2px 1px 1px  #CE7777;
+  font-family: 'Raleway', sans-serif;
 }
+
+.link:hover {
+  color: #CE7777;
+}
+
+
+.productImage {
+  width: 350px;
+  height: 300px;
+  margin-top: 20px;
+  border-radius: 20px;
+}
+
+.cartImage {
+  width: 60px;
+  margin: 10px;
+  }
+
+.cartIcon {
+  width: 25px;
+  }
+
+.categoryButton:hover {
+  background-color: #E8C4C4;
+  color: black;
+ }
+
+.categoryButtonSelected {
+  background-color: #CE7777;
+  color: #E8C4C4;
+ }
+
+.categoryButton {
+  cursor: pointer;
+  margin: 5px;
+  padding: 5px;
+}
+
+.category {
+  display: flex;
+  justify-content: center;
+  margin: 15px;
+  font-family: 'Raleway', sans-serif;
+  color: #CE7777;
+}
+
+.icon {
+  width: 30px;
+  }
+
+h2 {
+  font-size: 20px;
+  color: #F2E5E5; 
+}
+
+.plus {
+  font-size: 20px;
+  color: #F2E5E5;
+  border-radius: 20px;
+  width: 30px;
+}
+
+.cartBtn {
+  font-size: 20px;
+  color: #F2E5E5;
+  border-radius: 10px;
+  width: 150px;
+}
+
+.header {
+  font-size: 30px;
+  color: #F2E5E5;
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+
+}
+
+button {
+  background-color: #CE7777;
+  margin-top: 20px;
+  margin-left: 10px;
+}
+
+.cartContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+p {
+  font-size: 20px;
+}
+
+.cartItem {
+  margin-top: 10px;
+  background-color: #F2E5E5;
+  align-items: center;
+  color: black;
+  display: flex;
+  justify-content: space-around;
+  width: 70%;  
+}
+
+.cardContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 10px;
+
+}
+
+.prodCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 12px;
+ 
+}
+
+.cards {
+  display: flex;
+}
+
+.quant {
+  color: #F2E5E5;
+  text-align: center;
+  margin: 5px;
+}
+
+.containerAbout {
+  display: flex;
+  background-color: #F2E5E5;
+  justify-content: space-around;
+  margin-top: 30px;
+}
+
+.text {
+  font-size: 20px;
+  color: #2B3A55;
+  text-align: justify;
+  width: 50%;
+  padding: 30px;
+  text-indent: 35px; 
+}
+
+.imgAbout {
+  width: 400px;
+  height: 350px;
+  align-self: center;
+  padding: 10px;
+}
+
+hr {
+  width: 50%;
+}
+
+h3 {
+  font-size: 20px;
+  color: #F2E5E5;
+}
+
+.contactContainer {
+  display: flex;
+  justify-content: space-around
+}
+
+.mailNumber {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+}
+
+.mail, .number {
+  text-decoration: none;
+  color: #CE7777;
+  font-size: 20px;
+  font-family: 'Raleway', sans-serif;
+  margin-top: 15px;
+
+}
+
+.workTime {
+  text-decoration: none;
+  color: #CE7777;
+  font-size: 20px;
+  font-family: 'Raleway', sans-serif;
+  margin-top: 5px;
+}
+
+.payContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ulContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 70%;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  margin-top: 17px;
+}
+
+h3 {
+  align-self: center; 
+}
+
+li {
+  font-size: 20px;
+  color: #CE7777;
+  list-style: none;
+  margin-top: 3px;  
+}
+
+@media all and (max-width: 820px) {
+  nav {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .link {
+    padding: 10px;
+    font-size: 22px;
+  }
+
+  .header {
+    font-size: 27px;
+  }
+
+  .containerAbout {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .imgAbout {
+    max-width: 100%;
+    height: auto;
+   
+  }
+
+  .text {
+    font-size: 20px;
+    width: 90%;
+    padding: 20px;
+  }
+
+  .contactContainer {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .mailNumber {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .mail, .number {
+    font-size: 18px;
+    margin-top: 13px;
+  }
+  
+  .workTime {
+    text-decoration: none;
+    color: #CE7777;
+    font-size: 20px;
+    font-family: 'Raleway', sans-serif;
+    margin-top: 5px;
+  }
+
+  .category {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 15px;
+    
+  }
+
+  ul {   
+    margin-top: 17px;    
+  }
+  
+  h3,h2 {
+    align-self: center; 
+    font-size: 15px;
+
+  }
+  
+  li {
+    align-self: flex-start;
+    font-size: 18px;
+    margin-top: 3px;
+    
+  }
+
+  .ulContainer {
+    width: 100%;
+  }
+
+  
+  .cartItem {
+    margin-top: 9px;
+    width: 100%;  
+  }
+
+  
+.plus {
+  font-size: 18px;
+  color: #F2E5E5;
+  border-radius: 20px;
+  width: 28px;
+}
+
+.cartBtn {
+  font-size: 18px;
+  width: 140px;
+}
+
+
+.quant {
+  margin: 4px;
+}
+
+.productImage {
+  width: 300px;
+  height: 260px;
+  margin-top: 17px;
+ }
+
+ .icon {
+  width: 28px;
+  }
+
+ 
+}
+
+
+@media all and (max-width: 500px) {
+  nav {
+    padding: 18px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .link {
+    padding: 10px;
+    font-size: 20px;
+  }
+
+  .header {
+    font-size: 24px;
+  }
+
+  .containerAbout {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .imgAbout {
+    max-width: 90%;
+    height: auto;
+   
+  }
+
+  .text {
+    font-size: 17px;
+    width: 90%;
+    padding: 18px;
+  }
+
+  .contactContainer {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .mailNumber {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .mail, .number {
+    font-size: 15px;
+    margin-top: 10px;
+  }
+  
+  .workTime {
+    font-size: 15px;
+    margin-top: 5px;
+    align-self: center;
+  }
+
+  .category {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 15px;
+    
+  }
+
+  ul {   
+    margin-top: 17px;    
+  }
+  
+  h3 {
+    align-self: center; 
+  }
+  
+  li {
+    align-self: flex-start;
+    font-size: 18px;
+    margin-top: 3px;
+    
+  }
+
+  .ulContainer {
+    width: 100%;
+  }
+
+  p {
+    font-size: 15px;
+  }
+
+  .plus {
+    font-size: 17px;
+    color: #F2E5E5;
+    border-radius: 20px;
+    width: 28px;
+  }
+  
+  .cartBtn {
+    font-size: 17px;
+    width: 130px;
+  }
+  
+  
+  .quant {
+    margin: 4px;
+  }
+  
+  .productImage {
+    width: 350px;
+    height: 300px;
+    margin-top: 17px;
+   }
+
+   .icon {
+    width: 27px;
+    }
+  
+
+ 
+}
+
+@media all and (max-width: 280px) {
+  p {
+    font-size: 12px;
+  }
+
+  .header {
+    font-size: 20px;
+  }
+
+  .mail, .number {
+    font-size: 15px;
+    margin-top: 8px;
+  }
+
+  
+  .workTime {
+    font-size: 13px;
+    margin-top: 4px;
+  }
+
+  .plus {
+    font-size: 15px;
+    width: 25px;
+  }
+  
+  .cartBtn {
+    font-size: 15px;
+    width: 130px;
+  }
+  
+  
+  .quant {
+    margin: 3px;
+  }
+  
+  .productImage {
+    width: 250px;
+    height: 200px;
+    margin-top: 15px;
+   }
+
+   .icon {
+    width: 25px;
+    }
+
+
+
+}
+
+
+
