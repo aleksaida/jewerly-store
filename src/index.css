@@ -84,6 +84,10 @@ h2 {
   color: #F2E5E5; 
 }
 
+.nameProd {
+  font-size: 22px;
+}
+
 .plus {
   font-size: 20px;
   color: #F2E5E5;
@@ -323,8 +327,12 @@ li {
   
   h3,h2 {
     align-self: center; 
-    font-size: 15px;
+    font-size: 18px;
 
+  }
+
+  .nameProd {
+    font-size: 20px;
   }
   
   li {
@@ -447,6 +455,14 @@ li {
   h3 {
     align-self: center; 
   }
+
+  h2, h3 {
+    font-size: 17px;
+  }
+
+  .nameProd {
+    font-size: 19px;
+  }
   
   li {
     align-self: flex-start;
@@ -539,9 +555,12 @@ li {
     width: 25px;
     }
 
-
+    h2, h3 {
+      font-size: 16px;
+    }
+  
+    .nameProd {
+      font-size: 18px;
+    }
 
 }
-
-
-
