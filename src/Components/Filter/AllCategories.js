@@ -8,7 +8,7 @@ const AllCategories = () => {
     </div>
     <div className="category">        
         {['ВЕСЬ АССОРТИМЕНТ', 'СЕРЬГИ', 'КОЛЬЦА', 'БРАСЛЕТЫ', 'БРОШИ', 'КОЛЬЕ'].
-        map((category, id) =>  <Filter category={category} key={id}/> 
+        map((category, index) =>  <Filter category={category} key={index}/> 
         )}   
         
     </div>
